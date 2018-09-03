@@ -1,0 +1,1 @@
+<?php $prepodlogin = 'prepod';$prepodpassw = '12345';?>

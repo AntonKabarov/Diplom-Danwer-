@@ -1,0 +1,618 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {height: 100%;
+      width: 100%}
+
+body{
+	width: 100%;
+	color: #333;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	background: #c5d7d7;
+}
+
+a {
+	color: #003300;
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	transition: all.6s ease;
+    float: left;	
+}
+
+a:hover {
+	color: #66CC33;
+}
+a, a:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Стили для шапки*/
+
+header {
+    width: 100%;
+	float: center;
+}
+
+header .verh {
+	width: 100%;
+	float:left;
+}
+
+/* Стили для Footer */
+
+footer {
+	width: 100%;
+	float: left;
+	background: #536b69 ;
+	height: 50px;
+}
+
+footer #nemu {
+	float: left;
+	width: 40%;
+	font-size: 1.5em;
+	text-align: center;
+	color:#FFFFFF;
+	margin-top: 1%;
+	margin-left: 10%;
+}
+
+footer #rights {
+	float: right;
+	width: 50%;
+	text-align: center;
+	font-size: 1.5em;
+	color:#FFFFFF;
+	margin-top: 1%;
+}
+
+footer #nemu a {
+	color:#FFFFFF;
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	transition: all.6s ease;
+    float: left;
+}
+footer #nemu a:hover {
+	color: #66CC33;
+}
+
+/* Стили для всего документа */
+
+#wrapper {
+	width: 80%;
+	margin-left:10%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+/* Стили для левой колонки */
+
+#wrapper #leftCol {
+	width: 70%;
+	margin-right:5%;
+	float:left;
+}
+
+#wrapper #leftCol #bigArticle {
+	width: 90%;
+	margin-left: 5%;
+	background-color: #97b261;
+	padding: 1%;
+	float:left;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #leftCol #bigArticle img, #wrapper #leftCol .moree img {
+	width: 43%;
+	float:left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#wrapper #leftCol #bigArticle h2, #wrapper #leftCol .moree h2 {
+	text-align: center;
+	font-size: 1.2em;
+	color: #000033;
+	font-family: Comic Sans MS;
+}
+#wrapper #leftCol #bigArticle strong, #wrapper #leftCol .moree strong {
+	text-align: left;
+	font-size: 1.0em;
+	color: #000033;
+	font-family: Comic Sans MS;
+	line-height: 1.5;
+}
+#wrapper #leftCol #bigArticle p, #wrapper #leftCol .moree p {
+	width: 95%;
+	margin-left: 2%;
+	/*text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify;
+	font-size: 1.0em;
+}
+
+#wrapper #leftCol #bigArticle div.more, #wrapper #leftCol #bigArticle a {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #339966;
+	color: #CCFFFF;
+	text-align: center;
+	margin-top: 10px;
+}
+#wrapper #leftCol  .moree div.button, #wrapper #leftCol  a{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #339966;
+	color: #CCFFFF;
+	
+	
+	text-align: center;
+}
+
+#wrapper #leftCol #bigArticle div.more:hover, #wrapper #leftCol .moree div.button:hover {
+	background-color: #c5d7d7;
+}
+
+#wrapper #leftCol .moree , #wrapper #leftCol  a{
+	margin-left: 5%;
+	background-color: #97b261;
+	padding: 1%;
+	float:left;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+#wrapper #leftCol  a{
+
+	background-color: #97b261;
+	padding: 1%;
+	float:left;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+#wrapper #leftCol input {
+	width: 40%;
+	margin-left: 40%;
+	float:left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #000066;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+#wrapper #leftCol #done {
+	background-color: #339966;
+	border: 2px solid #536b69;
+}
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+	border: 2px solid #536b69;
+}
+
+#wrapper #leftCol input#done:hover {
+	border: 2px solid #97b261;
+	cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+	width: 40%;
+	height: 150px;
+	margin-left: 40%;
+	float:left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #000033;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	resize: none;
+}
+
+#wrapper #leftCol #messageShow {
+	font-size: 1.2em;
+	float: left;
+	color: red;
+	width: 100%;
+	text-align: center;
+}
+
+/* Стили для страницы о нас */
+
+#wrapper #leftCol #about_us {
+	width: 76%;
+	height: 290px;
+	margin-top: 2%;
+	margin-left: 10%;
+	border: 1px solid silver;
+	background-color: #97b261;
+	padding: 4%;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #leftCol #about_us p {
+	width: 95%;
+	margin-left: 5%;
+	text-align:center;
+	font-size: 1.0em;
+	font-family: Comic Sans MS;
+	
+} 
+
+#wrapper #leftCol #about_us h2 {
+    margin: 20px;
+    text-align:center;
+	font-size: 1.5em;
+	color: #000033;
+	font-family: Comic Sans MS;
+}
+
+#wrapper #leftCol #about_us p,h4,h5,h6 {
+     margin: 10px;
+	 text-align:center;
+	 font-weight:normal;
+	 font-size: 1.0em;
+	 font-family: Comic Sans MS;
+	 margin-left: 5%;
+}
+
+#wrapper #leftCol #about_us h3, strong {
+text-align: center;
+	font-size: 1.0em;
+	color: #000033;
+	font-family: Comic Sans MS;
+	}
+/* Стили для правой колонки */
+
+#wrapper #rightCol {
+	width: 20%;
+	float:right;
+}
+
+#wrapper #rightCol .banner {
+	width: 100%;
+	float:left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#wrapper #rightCol .banner img {
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #rightCol #social {
+	float: right;
+	width: 80%;
+	margin-top: 10px;
+}
+
+#wrapper #rightCol #social img {
+	width: 70px;
+	height: 70px;
+	float: right;
+	margin-right: 13px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #rightCol #menur {
+	float: right;
+	width: 85%;
+	text-align:center;
+	margin-top: 4px;
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+#wrapper #rightCol #rectangle {
+	float: right;
+	width: 250px;
+	height: 220px;
+	background: #97b261;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #rightCol form {
+	text-align:center;
+	float: right;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+#wrapper #rightCol input {
+	    box-shadow: 0 0 5px #000;
+		height: 30px;
+}
+
+#wrapper #rightCol button {
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	width: 50px;
+	height: 30px;
+}
+
+#wrapper #rightCol button:hover {
+	border: 2px solid #3366FF;
+	cursor: pointer;
+}
+
+/* Стили для справочника */
+
+#wrapper #leftCol #gal {
+	width: 900px;
+	overflow: hidden;
+}
+
+#wrapper #leftCol #gal .item {
+	float:left;
+	margin: 0 15px 15px 0;
+}
+#wrapper #leftCol #gal .item p1 {
+	float:left;
+	background: #97b261;
+	
+}
+#wrapper #leftCol #gal .item p2 {
+	float:left;
+	margin-left: 50px;
+	background: #97b261;
+}
+#wrapper #leftCol #gal .item p4, p3 {
+	float:left;
+	margin-top: 30px;
+	margin-right: 500px;
+	background: #97b261;
+}
+
+#wrapper #leftCol #gal tbody tr:hover {
+    background: #98FB98; /* Цвет фона при наведении */
+    color: #000; /* Цвет текста при наведении */
+ } 
+#wrapper #leftCol #gal th {
+    background: #9ACD32 /* Цвет фона строки заголовка */
+}
+   
+#wrapper #leftCol #gal .item p5 {
+	float:left;
+	margin-top: -1316px;
+	margin-left: 270px;
+	background: #97b261;
+}
+#wrapper #leftCol #gal .item p6 {
+	float:left;
+	margin-top: -1316px;
+	margin-left: 550px;
+	background: #97b261;
+}
+#wrapper #leftCol #gal .item p7 {
+	float:left;
+	margin-left: 270px;
+	margin-top: -641px;
+	background: #97b261;
+}
+
+#wrapper #leftCol #gal .item p9 {
+	float:left;
+	margin-left: 550px;
+	margin-top: -641px;
+	background: #97b261;
+}
+#wrapper #leftCol #gal .item p10 {
+	float:left;
+	margin-top: 10 px;
+	background: #97b261;
+}
+#wrapper #leftCol #gal .demotable {
+ counter-reset: schetchik;  /* счётчик с названием "schetchik" работает в рамках класса .demotable */ 
+ 
+ }
+#wrapper #leftCol #gal  .demotable tbody tr {
+  counter-increment: schetchik;
+}
+
+#wrapper #leftCol #gal .demotable  tr:before{
+ content: counter(schetchik);  /* значение счётчика с названием "schetchik" записывается в первую клетку строки */ 
+ color: #000; 
+ border-top:.1em solid #000;
+}
+
+#wrapper #leftCol #gal .item div.butr{
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+#wrapper #leftCol #gal .item div.butr:hover {
+	background-color: #97b261;
+	color: #000;
+	border: 1px solid #000;
+}
+
+#wrapper #leftCol #gal .item a:hover {
+	color: #66CC33;
+}
+/* Стили для редактора бд */
+
+#wrapper #leftCol #mesto {
+	width: 1050px;
+	margin-left: -100px;
+	float:left;
+	background: #97b261;
+	font-size: 15px;
+}
+
+#wrapper #leftCol #mesto th {
+    background: #9ACD32 /* Цвет фона строки заголовка */
+}
+
+ #wrapper #leftCol #mesto tbody tr:hover {
+    background: #98FB98; /* Цвет фона при наведении */
+    color: #000; /* Цвет текста при наведении */
+   } 
+   #wrapper #leftCol  a {
+	color: #CCFFFF;
+	text-align: center;
+	background-color: #339966;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+	margin-top: 80px;
+	margin-left: 320px;
+   }
+   #wrapper #leftCol a:hover, #wrapper #leftCol #l a:hover {
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+	color: #66CC33;
+}
+   #wrapper #leftCol #l a {
+	color: #CCFFFF;
+	text-align: center;
+	background-color: #339966;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+	margin-top: 0px;
+	margin-left: 300px;
+   }
+   
+    #wrapper #leftCol p {
+	font-size: 30px;
+	text-align: center;
+   }
+   /* Стили для kontrola praktiki */
+   #wrapper #leftCol #tehn {
+	float:left;
+	background: #97b261;
+}
+
+#wrapper #leftCol #tehn th {
+    background: #9ACD32 /* Цвет фона строки заголовка */
+}
+
+ #wrapper #leftCol #tehn tbody tr:hover {
+    background: #98FB98; /* Цвет фона при наведении */
+    color: #000; /* Цвет текста при наведении */
+   } 
+   
+#wrapper #leftCol #t a {
+	color: #CCFFFF;
+	text-align: center;
+	background-color: #339966;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+	margin-top: 50px;
+	margin-left: 280px;
+   }
+/* Стили для tema */
+#wrapper #leftCol #tema {
+	width: 800px;
+	overflow: hidden;
+	background: #48D1CC;
+	padding: 20px 10px 20px 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+#wrapper #leftCol #tema .item {
+	width: 140px;
+	height: 140px;
+	float:left;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+	margin: 0 15px 15px 0;
+}
+
+#wrapper #leftCol #tema .item > div {
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+#wrapper #leftCol #tema .front{
+	transition: all .3s;
+}
+
+#wrapper #leftCol #tema .front:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+/* Стили для поиска */
+
+#wrapper #leftCol #sea {
+	font-size: 1.6em;
+}
+
+#wrapper #leftCol #sea h2 {
+	background: #fff;
+	width: 400px;
+	height: 40px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	margin-left: 220px;
+	text-align: center;
+}
+#wrapper #leftCol #sea #s {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Стили для выбора диаграмм */
+
+#wrapper #leftCol #txt {
+	width: 1000px;
+	height: 200px;
+}
+#wrapper #leftCol #txt form {
+	  list-style: none; /*убираем маркеры списка*/  
+	  display: flex;
+	  padding: 5px;
+}
+#wrapper #leftCol #txt form li {
+
+	  padding: 3px;
+}
+#wrapper #leftCol #txt select {
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	font-size: 1.1em;
+}
+  
+#wrapper #leftCol #txt select:hover {
+    box-shadow: 0 0 0 #000;
+	cursor: pointer;
+} 
+  
+#wrapper #leftCol #txt option:hover {
+	background: #48D1CC;
+	cursor: pointer;
+}
+#wrapper #leftCol #txt a {
+	margin-top: 80px;
+	margin-left: 300px;
+	background-color: #339966;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+	
+}
+#wrapper #leftCol #txt but {
+	color: #CCFFFF;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+#wrapper #leftCol #txt div.but:hover {
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
